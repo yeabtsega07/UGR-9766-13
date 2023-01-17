@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A church charity site">
+    <link rel="stylesheet" href="./contact Us.css">
+
+    <title>MKC Charity Foundation</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <label for="check">check</label>
+            <input type="checkbox" name="" id="check">
+            
+            <div class="header__logo-container">
+                <img  class="header__logo" height=50px width= 50px src="./Image/mkc-high-resolution-logo-color-on-transparent-background.png" alt="MKC charity foundation Logo">
+                
+            </div>
+
+            <div class="header__nav-btn">
+                <div class="header__nav-links">
+                    <ul>
+                        <li class="header__nav-link" style="--i: .6s">
+                            <a href="./Home.html">Home</a>
+                        </li>
+                        <li class="header__nav-link" style="--i: .6s">
+                            <a href="./About.html">About</a>
+                        </li>
+
+                        <li class="header__nav-link" style="--i: .85s">
+                            <a href="#">What's New</a>
+                            <div class="header__dropdown">
+                                <ul>
+                                    <li class="header__dropdown-link">
+                                        <a href="./Events.html">Events</a>
+                                    </li>
+                                    <li class="header__dropdown-link">
+                                        <a href="./News.html">News</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-link" style="--i: 1.1s">
+                            <a href="./Bible Study.html">Bible Study</a>
+                        </li>
+                        <li class="header__nav-link" style="--i: 1.35s">
+                            <a href="./Contact Us.html">Contact Us</a>
+                        </li>
+                        <li class="header__nav-link donate" style="--i: 1.35s">
+                            <a href="./Donate.html">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__hamburger-menu-container">
+                <div class="header__hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+
+            <section class="main__part1">
+                <div class="main__contact">
+
+                    <h1> GET IN TOUCH</h1>
+                    <div  class="main__icons">
+                        
+                        <span> <img src="./Image/location-dot-solid.svg" alt="location icon"> Address</span>
+                    </div>
+                    <div class="main__icons">  
+                        
+                        <span> <img src="./Image/phone-solid.svg" alt="phone icon">  Office Phone</span>
+                    </div>
+                    <div class="main__icons">
+                        
+                        <span> <img src="./Image/mobile-solid.svg" alt="mobile phone icon"> Tel.No</span>
+                    </div>
+                    <div class="main__icons">
+                        <span>  <img src="./Image/envelope-circle-check-solid.svg" alt="envelop icon"> Example@gmail.com</span>
+                    </div>
+                </div>
+                <div class="main__content1">
+
+                    <h4> Messege Us</h4>
+                    <p> If you're interested in learning more about our charity or want to get involved, please don't hesitate to contact us. We would be more than happy to answer any questions you may have and provide you with more information on how you can help support our mission. 
+                        We appreciate your interest in our charity and look forward to hearing from you. Together, we can make a difference in the lives of those in need.</p>
+                    </div>
+                </section>
+            </div>
+                <section class="main__form">     
+                      <div class="main__wrapper">
+                        <h2>GET IN TOUCH</h2>
+                        <div id="error_message"></div>
+                        <form id="myform" onsubmit="return false;">
+                            <div class="main__input_field">
+                                <label for="name">* Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" value="" required>
+                            </div>
+                            <div class="main__input_field">
+                                <label for="email">* Email</label>
+                                <input type="email" placeholder="Email address" id="email" name="email" value="" required>
+                            </div>
+                            <div class="main__input_field">
+                                <label for="subject">* Message</label>
+                                <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject" required></textarea>
+                            </div>
+                            <div class="main__btn">
+                                <input id="submit" type="submit" value="SEND" onclick="return validate();" >
+                            </div>
+                        </form>
+                    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+
+            <div class="footer__logo">
+                
+                <a href="./Home.html">
+                    <img  height=50px width= 50px src="./Image/mkc-low-resolution-logo-color-on-transparent-background.png" alt="MKC charity foundation Logo">
+                </a>
+            </div>
+            <div class="footer__description">
+                
+                <h3> Contact Us</h3>
+                <p>
+                    Contact us to get involved with our charity. Phone: +2519090909, Email: MKC@charityfoundation.com, Website: MKC Charity Foundation.org .  
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="footer__icons">
+
+            <a href="#"><img src="./Image/square-facebook.svg" alt="facebook icon"></a>
+            <a href="#"><img src="./Image/envelope-circle-check-solid.svg" alt="email icon"></a>
+            <a href="#"><img src="./Image/twitter.svg" alt="twitter icon"></a>
+            <a href="#"><img src="./Image/instagram.svg" alt="instagram icon"></a>
+    </div>
+
+        <p>
+            Copyright &copy;  ALL OF THE RIGHTS RESERVED
+        </p>
+        
+    </footer>
+  <script src="./contact Us.js"></script>  
+</body>
+</html>
